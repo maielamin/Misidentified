@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Misidentified: block game</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:700&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<body>
+  <img src="logo.png" style="display: block;margin-left: auto;margin-right: auto;width: 50%;">
+  <p>Select the same coloured blocks with more than one pixel</p>
+  <label>Score:</label>
+  <label id="score">0</label>
+  <br><br>
+    <canvas id="canvas"></canvas>
+    <br><br>
+
+    <input type="button" id="1" value="1">
+      <script type="text/javascript">
+      var myLink = document.getElementById('1');
+
+      myLink.onclick = function(){
+
+          var script = document.createElement("script");
+          script.type = "text/javascript";
+          script.src = "js/script.js"; 
+          document.getElementsByTagName("head")[0].appendChild(script);
+          return false;
+
+      }
+      </script>
+
+    <input type="button" id="2" value="2">
+    <script type="text/javascript">
+      var myLink = document.getElementById('2');
+
+      myLink.onclick = function(){
+
+          var script = document.createElement("script");
+          script.type = "text/javascript";
+          script.src = "js/script2.js"; 
+          document.getElementsByTagName("head")[0].appendChild(script);
+          return false;
+
+      }
+      </script>
+
+    <input type="button" id="3" value="3">
+    <script type="text/javascript">
+      var myLink = document.getElementById('3');
+
+      myLink.onclick = function(){
+
+          var script = document.createElement("script");
+          script.type = "text/javascript";
+          script.src = "js/script3.js"; 
+          document.getElementsByTagName("head")[0].appendChild(script);
+          return false;
+
+      }
+      </script>
+
+    <input type="button" id="4" value="4">
+    <script type="text/javascript">
+      var myLink = document.getElementById('4');
+
+      myLink.onclick = function(){
+
+          var script = document.createElement("script");
+          script.type = "text/javascript";
+          script.src = "js/script4.js"; 
+          document.getElementsByTagName("head")[0].appendChild(script);
+          return false;
+
+      }
+      </script>
+    <input type="button" id="reset" value="reset">
+    <div id="end">Misidentified is a block game reflecting the lack of inclusiveness in datasets of AI systems. If a dataset has a lot of data to identify a group, it can make a distinction, but, when classifying a group with little data, it is more difficult. The game shows this by only having fewer blocks of a certain shade and having them similar in tone it is more difficult for the user to distinguish them whereas with the other tones they are distinguishable. By playing with both skin tones it shows that dark skin tones are not objectively tougher to identify. This is real world problem which could lead to misidentification for example in facial recognition being used by police forces.</div>
+</body>
+<!-- partial -->
+  <script  src="js/script.js"></script>
+</html>
