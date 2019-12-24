@@ -1,3 +1,4 @@
+alert("Misidentified is a block game reflecting the lack of inclusiveness in datasets of AI systems. If a dataset has a lot of data to identify a group, it can make a distinction, but, when classifying a group with little data, it is more difficult. The game shows this by only having fewer blocks of a certain shade and having them similar in tone it is more difficult for the user to distinguish them whereas with the other tones they are distinguishable. By playing with both skin tones it shows that dark skin tones are not objectively tougher to identify. This is real world problem which could lead to misidentification for example in facial recognition being used by police forces.");
 var canvas = document.getElementById('canvas');
 canvas.addEventListener('click', click, false);
 var c = canvas.getContext("2d");
