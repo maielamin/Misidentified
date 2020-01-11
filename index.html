@@ -2,83 +2,142 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
+  <meta charset="UTF-8">
   <title>Misidentified game</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./style.css">
 </head>
 <body>
-<!-- partial:index.partial.html -->
-<body>
-  <img src="logo.png" style="display: block;margin-left: auto;margin-right: auto;width: 50%;">
-  <p>Select the same coloured blocks with more than one pixel</p>
-  <label>Score:</label>
-  <label id="score">0</label>
-  <br><br>
-    <canvas id="canvas"></canvas>
-    <br><br>
+	<img src="logo.png" style="display: block;margin-left: auto;margin-right: auto;width: 50%;">
+	<p>Misidentified is a block game reflecting the lack of inclusiveness in datasets of AI systems.</br>Select blocks of more than one pixel and the same colour</p>
+	<label>Score:</label>
+	<label id="score">0</label>
+	<br><br>
+	  <canvas id="canvas"></canvas>
+	  <br><p>Tap on one of the four different modes each representing a stage of data sets</br>evolution for facial recognition of individuals with different skin tones.</p>
 
-    <input type="button" id="1" value="1">
-      <script type="text/javascript">
-      var myLink = document.getElementById('1');
+	  <!-- partial:index.partial.html -->
+<div class="demo-btns">
 
-      myLink.onclick = function(){
+		<div class="info">
+			<div class="buttons">
+				<p>
+					<a href="" data-modal="#modal" class="modal__trigger">1</a>
+					<a href="" data-modal="#modal2" class="modal__trigger">2</a>
+					<a href="" data-modal="#modal3" class="modal__trigger">3</a>
+					<a href="" data-modal="#modal4" class="modal__trigger">4</a>
+				</p>
+			</div>
+		</div>
+	</div>
 
-          var script = document.createElement("script");
-          script.type = "text/javascript";
-          script.src = "js/script.js"; 
-          document.getElementsByTagName("head")[0].appendChild(script);
-          return false;
+	<!-- Modal -->
+	<div id="modal" class="modal modal__bg" role="dialog" aria-hidden="true">
+		<div class="modal__dialog">
+			<div class="modal__content">
+				<h1>Present datasets</h1>
+				<p>The first stage is what most applications have, which is a lot of people with lighter skin tones than people with darker skin tones. The game shows this by having fewer darker tones than lighter tones and you'll be left with the most reflected data in existing datasets when you finish playing-lighter skin tones.</p>
+				
+				<!-- modal close button -->
+				<a href="" class="modal__close demo-close">
+					<svg class="" viewBox="0 0 24 24"><path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z"/><path d="M0 0h24v24h-24z" fill="none"/></svg>
+				</a>
+				
+			</div>
+			<script type="text/javascript">
+				var myLink = document.getElementById('modal');
+				myLink.onclick = function(){
+		  
+					var script = document.createElement("script");
+					script.type = "text/javascript";
+					script.src = "js/script.js"; 
+					document.getElementsByTagName("head")[0].appendChild(script);
+					return false;
+				}
+				</script>
+		</div>
+	</div>
 
-      }
-      </script>
+	<div id="modal2" class="modal modal__bg" role="dialog" aria-hidden="true">
+		<div class="modal__dialog">
+			<div class="modal__content">
+				<h1>Alternative of present datasets</h1>
+				<p>The second stage poses the question: what if? If the tables were turned and current datsets represented more darker skin tones than lighter skin tones. The games shows a lot more darker tones than lighters and it will be easier for the user to select darker tones as it will be easier to distiguish than the lighter tones.</p>
+				<!-- modal close button -->
+				<a href="" class="modal__close demo-close">
+					<svg class="" viewBox="0 0 24 24"><path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z"/><path d="M0 0h24v24h-24z" fill="none"/></svg>
+				</a>
+			</div>
+			<script type="text/javascript">
+				var myLink = document.getElementById('modal2');
+				myLink.onclick = function(){
+		  
+					var script = document.createElement("script");
+					script.type = "text/javascript";
+					script.src = "js/script2.js"; 
+					document.getElementsByTagName("head")[0].appendChild(script);
+					return false;
+				}
+				</script>
+		</div>
+	</div>
 
-    <input type="button" id="2" value="2">
-    <script type="text/javascript">
-      var myLink = document.getElementById('2');
+	<div id="modal3" class="modal modal__bg" role="dialog" aria-hidden="true">
+		<div class="modal__dialog">
+			<div class="modal__content">
+				<h1>This is not objective to one skin tone</h1>
+				<p>The third level shows what if we both had a set of data equivalent for both skin tones, so it was still challenging to make a difference between tones. </p>
+				
+				<!-- modal close button -->
+				<a href="" class="modal__close demo-close">
+					<svg class="" viewBox="0 0 24 24"><path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z"/><path d="M0 0h24v24h-24z" fill="none"/></svg>
+				</a>
+			</div>
+			<script type="text/javascript">
+				var myLink = document.getElementById('modal3');
+				myLink.onclick = function(){
+		  
+					var script = document.createElement("script");
+					script.type = "text/javascript";
+					script.src = "js/script3.js"; 
+					document.getElementsByTagName("head")[0].appendChild(script);
+					return false;
+				}
+				</script>
+		</div>
+	</div>
+	<div id="modal4" class="modal modal__bg" role="dialog" aria-hidden="true">
+		<div class="modal__dialog">
+			<div class="modal__content">
+				<h1>Optimal dataset</h1>
+				<p>the final level shows the optimal set of data that is so inclusive and the program will make a clear difference, which is what we should promote.</p>
+				
+				<!-- modal close button -->
+				<a href="" class="modal__close demo-close">
+					<svg class="" viewBox="0 0 24 24"><path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z"/><path d="M0 0h24v24h-24z" fill="none"/></svg>
+				</a>
+			</div>
+			<script type="text/javascript">
+				var myLink = document.getElementById('modal4');
+				myLink.onclick = function(){
+		  
+					var script = document.createElement("script");
+					script.type = "text/javascript";
+					script.src = "js/script4.js"; 
+					document.getElementsByTagName("head")[0].appendChild(script);
+					return false;
+				}
+				</script>
+		</div>
+	</div>
 
-      myLink.onclick = function(){
-
-          var script = document.createElement("script");
-          script.type = "text/javascript";
-          script.src = "js/script2.js"; 
-          document.getElementsByTagName("head")[0].appendChild(script);
-          return false;
-
-      }
-      </script>
-
-    <input type="button" id="3" value="3">
-    <script type="text/javascript">
-      var myLink = document.getElementById('3');
-
-      myLink.onclick = function(){
-
-          var script = document.createElement("script");
-          script.type = "text/javascript";
-          script.src = "js/script3.js"; 
-          document.getElementsByTagName("head")[0].appendChild(script);
-          return false;
-
-      }
-      </script>
-
-    <input type="button" id="4" value="4">
-    <script type="text/javascript">
-      var myLink = document.getElementById('4');
-
-      myLink.onclick = function(){
-
-          var script = document.createElement("script");
-          script.type = "text/javascript";
-          script.src = "js/script4.js"; 
-          document.getElementsByTagName("head")[0].appendChild(script);
-          return false;
-
-      }
-      </script>
-    <input type="button" id="reset" value="reset">
-    <div id="end">Misidentified is a block game reflecting the lack of inclusiveness in datasets of AI systems. If a dataset has a lot of data to identify a group, it can make a distinction, but, when classifying a group with little data, it is more difficult. The game shows this by only having fewer blocks of a certain shade and having them similar in tone it is more difficult for the user to distinguish them whereas with the other tones they are distinguishable. By playing with both skin tones it shows that dark skin tones are not objectively tougher to identify. This is real world problem which could lead to misidentification for example in facial recognition being used by police forces.</div>
-</body>
+	<input type="button" id="reset" value="reset">
 <!-- partial -->
   <script  src="js/script.js"></script>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+
 </html>
